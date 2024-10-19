@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Modern Alarm Clock</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <div class="clock-container">
+      <div class="date" id="date">--/--/----</div>
+      <div class="clock" id="clock">--:--:--</div>
+    </div>
+
+    <div class="region-select">
+      <select id="regionSelect">
+        <option value="Asia/Colombo">Sri Lanka</option>
+        <option value="America/New_York">New York, USA</option>
+        <option value="Europe/London">London, UK</option>
+        <option value="Asia/Tokyo">Tokyo, Japan</option>
+        <option value="Australia/Sydney">Sydney, Australia</option>
+      </select>
+    </div>
+
+    <div class="alarm-controls">
+      <input type="time" id="alarmTime" />
+      <button onclick="addAlarm()">Add Alarm</button>
+    </div>
+
+    <ul class="alarm-list" id="alarmList"></ul>
+  </div>
+  
+  <script src="scripts.js"></script>
+</body>
+</html>
